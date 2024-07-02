@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex 2024.3.18)  2 JUL 2024 13:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex 2024.3.18)  2 JUL 2024 15:34
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -209,97 +209,365 @@ File: pstricks.tex 2022/01/09 v3.13 `PSTricks' (tvz,hv)
 `pst-fp' v0.06, 2020/11/20 (hv))
 File: pst-fp.tex 2020/11/20 v0.06 `PST-fp' (hv)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
-
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
-Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-)
-\Gm@cnth=\count291
-\Gm@cntv=\count292
-\c@Gm@tempcnt=\count293
-\Gm@bindingoffset=\dimen179
-\Gm@wd@mp=\dimen180
-\Gm@odd@mp=\dimen181
-\Gm@even@mp=\dimen182
-\Gm@layoutwidth=\dimen183
-\Gm@layoutheight=\dimen184
-\Gm@layouthoffset=\dimen185
-\Gm@layoutvoffset=\dimen186
-\Gm@dimlist=\toks30
-)
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
 File: l3backend-dvips.def 2022-01-12 L3 backend support: dvips
 \l__pdf_internal_box=\box54
-\g__pdf_backend_object_int=\count294
+\g__pdf_backend_object_int=\count291
 \l__pdf_backend_content_box=\box55
 \l__pdf_backend_model_box=\box56
-\g__pdf_backend_annotation_int=\count295
-\g__pdf_backend_link_int=\count296
-\g__pdf_backend_link_sf_int=\count297
+\g__pdf_backend_annotation_int=\count292
+\g__pdf_backend_link_int=\count293
+\g__pdf_backend_link_sf_int=\count294
 )
 (./Lines.aux)
 \openout1 = `Lines.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 
-*geometry* driver: auto-detecting
-*geometry* detected driver: dvips
-*geometry* verbose mode - [ preamble ] result:
-* driver: dvips
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
-* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=418.25368pt
-* \textheight=591.5302pt
-* \oddsidemargin=17.3571pt
-* \evensidemargin=17.3571pt
-* \topmargin=-7.86334pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=10.0pt
-* \footskip=30.0pt
-* \marginparwidth=57.0pt
-* \marginparsep=11.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+! Undefined control sequence.
+\@pstrickserr #1#2->\beging 
+                            roup \newlinechar `\
+ \edef \pst@tempc {#2}\expa...
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+PSTricks error.  See User's Guide for further information.
+                 Type  H <return>  for immediate help.
+! Undefined fill style: `gradient'.
+\@pstrickserr ... immediate help.}\errmessage {#1}
+                                                  \endgroup 
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+
+Your command was ignored.\MessageBreak Type  I <command> <return>  to replace i
+t with another command,\MessageBreak or  <return>  to continue without it.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \XKV@prefix 
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \else.
+\XKV@s@tk@ys ...st@o \XKV@rm \CurrentOption \else 
+                                                  \XKV@err {`\XKV@tkey ' und...
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+I'm ignoring this; it doesn't match any \if.
+
+
+! Package xkeyval Error: `\XKV@tkey ' undefined in families `\XKV@fams '.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Extra \else.
+\XKV@s@tk@ys ...milies `\XKV@fams '}\fi \fi \else 
+                                                  \ifXKV@inpox \ifx \XKV@tes...
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+I'm ignoring this; it doesn't match any \if.
+
+! Extra \fi.
+\XKV@s@tk@ys ...urrentOption }\fi \fi \fi \fi \fi 
+                                                  
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+I'm ignoring this; it doesn't match any \if.
+
+! Extra \fi.
+\XKV@f@r ...two \else #2\expandafter \XKV@f@r \fi 
+                                                  #1{#2}
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+I'm ignoring this; it doesn't match any \if.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \XKV@prefix 
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \else.
+\XKV@s@tk@ys ...XKV@tfam \XKV@s@tk@ys@ {#3}}\else 
+                                                  \XKV@whilist \XKV@fams \XK...
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+I'm ignoring this; it doesn't match any \if.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \XKV@prefix 
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \else.
+\XKV@s@tk@ys ...st@o \XKV@rm \CurrentOption \else 
+                                                  \XKV@err {`\XKV@tkey ' und...
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+I'm ignoring this; it doesn't match any \if.
+
+
+! Package xkeyval Error: `gradlines' undefined in families `\XKV@fams '.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Extra \else.
+\XKV@s@tk@ys ...milies `\XKV@fams '}\fi \fi \else 
+                                                  \ifXKV@inpox \ifx \XKV@tes...
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+I'm ignoring this; it doesn't match any \if.
+
+! Extra \fi.
+\XKV@s@tk@ys ...urrentOption }\fi \fi \fi \fi \fi 
+                                                  
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+I'm ignoring this; it doesn't match any \if.
+
+! Extra \fi.
+\XKV@f@r ...two \else #2\expandafter \XKV@f@r \fi 
+                                                  #1{#2}
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+I'm ignoring this; it doesn't match any \if.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \XKV@prefix 
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \else.
+\XKV@s@tk@ys ...XKV@tfam \XKV@s@tk@ys@ {#3}}\else 
+                                                  \XKV@whilist \XKV@fams \XK...
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+I'm ignoring this; it doesn't match any \if.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \XKV@prefix 
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \else.
+\XKV@s@tk@ys ...st@o \XKV@rm \CurrentOption \else 
+                                                  \XKV@err {`\XKV@tkey ' und...
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+I'm ignoring this; it doesn't match any \if.
+
+
+! Package xkeyval Error: `gradbegin' undefined in families `\XKV@fams '.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Extra \else.
+\XKV@s@tk@ys ...milies `\XKV@fams '}\fi \fi \else 
+                                                  \ifXKV@inpox \ifx \XKV@tes...
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+I'm ignoring this; it doesn't match any \if.
+
+! Extra \fi.
+\XKV@s@tk@ys ...urrentOption }\fi \fi \fi \fi \fi 
+                                                  
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+I'm ignoring this; it doesn't match any \if.
+
+! Extra \fi.
+\XKV@f@r ...two \else #2\expandafter \XKV@f@r \fi 
+                                                  #1{#2}
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+I'm ignoring this; it doesn't match any \if.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \XKV@prefix 
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \else.
+\XKV@s@tk@ys ...XKV@tfam \XKV@s@tk@ys@ {#3}}\else 
+                                                  \XKV@whilist \XKV@fams \XK...
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+I'm ignoring this; it doesn't match any \if.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \XKV@prefix 
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \else.
+\XKV@s@tk@ys ...st@o \XKV@rm \CurrentOption \else 
+                                                  \XKV@err {`\XKV@tkey ' und...
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+I'm ignoring this; it doesn't match any \if.
+
+
+! Package xkeyval Error: `gradend' undefined in families `\XKV@fams '.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Extra \else.
+\XKV@s@tk@ys ...milies `\XKV@fams '}\fi \fi \else 
+                                                  \ifXKV@inpox \ifx \XKV@tes...
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+I'm ignoring this; it doesn't match any \if.
+
+! Extra \fi.
+\XKV@s@tk@ys ...urrentOption }\fi \fi \fi \fi \fi 
+                                                  
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+I'm ignoring this; it doesn't match any \if.
+
+! Extra \fi.
+\XKV@f@r ...two \else #2\expandafter \XKV@f@r \fi 
+                                                  #1{#2}
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+I'm ignoring this; it doesn't match any \if.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \XKV@prefix 
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \fi.
+\use@par ...t \pst@par ,\@nil \def \pst@par {}\fi 
+                                                  
+l.32 ...2000, gradbegin=colour4, gradend=colour5](
+                                                  7.492353,-5.8777633)(8.292...
+I'm ignoring this; it doesn't match any \if.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.42 \end{pspicture}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten \endgroup.
+\endpspicture ... \pst@killglue \endgroup \egroup 
+                                                  \ht \pst@hbox =\pst@dimd \...
+l.42 \end{pspicture}
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: \begin{document} ended by \end{pspicture}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42 \end{pspicture}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.42 \end{pspicture}
+                    
+Things are pretty mixed up, but I think the worst is over.
 
 [1
 
 ] (./Lines.aux) ) 
 Here is how much of TeX's memory you used:
- 8402 strings out of 478288
- 155739 string characters out of 5849315
- 454309 words of memory out of 5000000
- 26554 multiletter control sequences out of 15000+600000
+ 7923 strings out of 478288
+ 148185 string characters out of 5849315
+ 442767 words of memory out of 5000000
+ 26081 multiletter control sequences out of 15000+600000
  469259 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,5n,61p,386b,184s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,5n,61p,428b,215s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Lines.dvi (1 page, 2588 bytes).
+Output written on Lines.dvi (1 page, 772 bytes).
