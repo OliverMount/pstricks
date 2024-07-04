@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex 2024.3.18)  4 JUL 2024 07:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex 2024.3.18)  4 JUL 2024 14:02
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -242,7 +242,7 @@ LaTeX Font Info:    ... okay on input line 13.
 Here is how much of TeX's memory you used:
  7909 strings out of 478288
  148023 string characters out of 5849315
- 439225 words of memory out of 5000000
+ 439226 words of memory out of 5000000
  26067 multiletter control sequences out of 15000+600000
  469259 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
