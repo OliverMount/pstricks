@@ -1,0 +1,25 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{pstricks}
+\usepackage{pst-3dplot}
+
+\begin{document}
+
+\begin{pspicture}(-4,-4)(4,6)
+  \pstThreeDCoor[xMax=2,yMax=2,zMax=6]
+
+  \parametricplotThreeD[
+     linecolor=blue,
+     plotstyle=curve,
+     algebraic=true
+  ]{0}{6.283}{ cos(t)  sin(t)  t }
+
+\end{pspicture}
+
+\end{document}
+
+
+
+
+
+
