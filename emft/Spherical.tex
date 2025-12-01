@@ -1,0 +1,102 @@
+\documentclass{article}
+\usepackage{tikz,tikz-3dplot}
+\begin{document}
+\begin{figure}
+\centering
+\tdplotsetmaincoords{70}{120}
+% === PARAMETERS ===
+\def\ra{4}        % r (radial distance)
+\def\thetaa{45}   % theta (polar angle from z-axis)
+\def\phia{55}     % phi (azimuthal angle from x-axis)
+
+% === COORDINATE CALCULATIONS ===
+% Point P in Cartesian coordinates: x = r sin(theta) cos(phi), etc.
+\pgfmathsetmacro{\Px}{\ra*sin(\thetaa)*cos(\phia)}
+\pgfmathsetmacro{\Py}{\ra*sin(\thetaa)*sin(\phia)}
+\pgfmathsetmacro{\Pz}{\ra*cos(\thetaa)}
+
+% Unit vector in r direction
+\pgfmathsetmacro{\arxs}{sin(\thetaa)*cos(\phia)}
+\pgfmathsetmacro{\arys}{sin(\thetaa)*sin(\phia)}
+\pgfmathsetmacro{\arzs}{cos(\thetaa)}
+
+% Unit vector in theta direction
+\pgfmathsetmacro{\athetax}{cos(\thetaa)*cos(\phia)}
+\pgfmathsetmacro{\athetay}{cos(\thetaa)*sin(\phia)}
+\pgfmathsetmacro{\athetaz}{-sin(\thetaa)}
+
+% Unit vector in phi direction
+\pgfmathsetmacro{\aphix}{-sin(\phia)}
+\pgfmathsetmacro{\aphiy}{cos(\phia)}
+\pgfmathsetmacro{\aphiz}{0}
+
+% Projection onto xy-plane
+\pgfmathsetmacro{\Pxproj}{\ra*sin(\thetaa)*cos(\phia)}
+\pgfmathsetmacro{\Pyproj}{\ra*sin(\thetaa)*sin(\phia)}
+
+% Plane phi points
+\pgfmathsetmacro{\PxP}{5*cos(\phia)}
+\pgfmathsetmacro{\PyP}{5*sin(\phia)}
+
+\begin{tikzpicture}[tdplot_main_coords, scale=0.75]
+\tikzstyle{every node}=[font=\small]
+
+% --- AXES ---
+\draw[thick,-latex] (0,0,0) -- (6,0,0) node[anchor=north east]{$x$};
+\draw[thick,-latex] (0,0,0) -- (0,6,0) node[anchor=north west]{$y$};
+\draw[thick,-latex] (0,0,0) -- (0,0,6) node[anchor=south]{$z$};
+
+% --- SPHERE (r = r1) ---
+\tdplotdrawarc[thick,dashed]{(0,0,0)}{\ra}{0}{360}{}{} % equator
+\tdplotdrawarc[thick,dashed]{(0,0,0)}{\ra}{90}{450}{}{} % meridian
+
+% --- CONE (theta = theta1) ---
+\pgfmathsetmacro{\coneradius}{\ra*sin(\thetaa)}
+\draw[thick] (0,0,\Pz) circle (\coneradius);
+\draw[thick] (0,0,0) -- (\Px,\Py,\Pz);
+\draw[thick] (0,0,0) -- ({-\Px},{-\Py},\Pz);
+\node[anchor=south] at ({0.3*\Px},{0.3*\Py},{0.7*\Pz}) {$\theta=\theta_1$ surface};
+
+% --- PLANE (phi = phi1) ---
+\filldraw[fill=blue, nearly transparent]
+    (0,0,0) -- (\PxP,\PyP,0) -- (\PxP,\PyP,5) -- (0,0,5) -- cycle;
+\draw (\PxP,\PyP,2.5) node[anchor=west]{$\phi=\phi_1$ plane};
+
+% --- SPHERE SURFACE through P ---
+\tdplotsetrotatedcoords{\phia}{90-\thetaa}{0}
+\tdplotdrawarc[thick,tdplot_rotated_coords]{(0,0,0)}{\ra}{-30}{210}{}{}
+
+% --- ANGLE PHI (in xy-plane) ---
+\draw[->,thick] (3,0,0) arc (0:\phia:3);
+\node at ({1.5*cos(\phia/2)},{1.5*sin(\phia/2)},0) {$\phi_1$};
+
+% --- ANGLE THETA (from z-axis) ---
+\tdplotdrawarc[->,thick]{(0,0,0)}{2.5}{90}{90-\thetaa}{anchor=south west}{$\theta_1$}
+
+% --- RADIAL LINE (r) ---
+\draw[ultra thick,-latex] (0,0,0) -- (\Px,\Py,\Pz);
+\node at ({0.5*\Px},{0.5*\Py},{0.5*\Pz}) [anchor=east] {$r_1$};
+
+% --- PROJECTION LINES ---
+\draw[dashed] (\Px,\Py,\Pz) -- (\Pxproj,\Pyproj,0);
+\draw[dashed] (0,0,0) -- (\Pxproj,\Pyproj,0);
+\draw[dashed] (0,0,\Pz) -- (\Px,\Py,\Pz);
+
+% --- POINT P ---
+\filldraw[color=red] (\Px,\Py,\Pz) circle (0.075cm);
+\node at (\Px+0.5,\Py+0.5,\Pz+0.5) {$P_1(r_1,\theta_1,\phi_1)$};
+
+% --- BASIS VECTORS at P ---
+\draw[ultra thick,-latex, color=red]
+    (\Px,\Py,\Pz) -- ({\Px+\arxs}, {\Py+\arys}, {\Pz+\arzs})
+    node[anchor=south west]{$\mathbf{a}_r$};
+\draw[ultra thick,-latex, color=blue]
+    (\Px,\Py,\Pz) -- ({\Px+\athetax}, {\Py+\athetay}, {\Pz+\athetaz})
+    node[anchor=north]{$\mathbf{a}_\theta$};
+\draw[ultra thick,-latex, color=green!50!black]
+    (\Px,\Py,\Pz) -- ({\Px+\aphix}, {\Py+\aphiy}, {\Pz+\aphiz})
+    node[anchor=south]{$\mathbf{a}_\phi$};
+
+\end{tikzpicture}
+\end{figure}
+\end{document}
