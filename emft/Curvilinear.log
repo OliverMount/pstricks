@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.5.5)  1 DEC 2025 10:30
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.5.5)  1 DEC 2025 10:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -57,9 +57,7 @@ File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
 \sa@box=\box51
 )
-(/usr/share/texlive/texmf-dist/tex/latex/pst-plot/pst-plot.sty
-Package: pst-plot 2011/06/05 v1.00 LaTeX wrapper for `pst-plot' (HV)
-
+(/usr/share/texlive/texmf-dist/tex/latex/pst-3dplot/pst-3dplot.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pstricks/pstricks.sty
 Package: pstricks 2024/02/02 v0.75 LaTeX wrapper for `PSTricks' (RN,HV)
 
@@ -244,6 +242,16 @@ File: pst-fp.tex 2020/11/20 v0.06 `PST-fp' (hv)
 
 >>> Loading XeTeX special macros
 (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks-xetex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/pst-3d/pst-3d.sty
+Package: pst-3d 2009/07/28 package wrapper for pst-3d.tex (hv)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pst-3d/pst-3d.tex
+`PST-3d' v1.11, 2010/02/14 (tvz))
+File: pst-3d.tex 2010/02/14 v1.11 `PST-3d' (hv)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pst-plot/pst-plot.sty
+Package: pst-plot 2011/06/05 v1.00 LaTeX wrapper for `pst-plot' (HV)
+
 (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/pst-xkey.sty
 Package: pst-xkey 2005/11/25 v1.6 package wrapper for pst-xkey.tex (HA)
 )
@@ -281,8 +289,6 @@ Package: pst-plot 2021/09/23 package wrapper for pst-plot.tex (hv)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pst-arrow/pst-arrow.tex
 `pst-arrow' v0.05, 2021/11/16 (dr,hv))
-(/usr/share/texlive/texmf-dist/tex/generic/pst-3d/pst-3d.tex
-`PST-3d' v1.11, 2010/02/14 (tvz))
 (/usr/share/texlive/texmf-dist/tex/generic/pst-math/pst-math.tex
 `pst-math' v0.67 , (CJ,hv)) `pstricks-add' v3.94, 2023/04/17 (dr,hv)
 \psparallelogramsep=\dimen181
@@ -320,13 +326,6 @@ Package: pst-plot 2021/09/23 package wrapper for pst-plot.tex (hv)
 )
 File: pst-plot.tex 2022/11/21 1.94 `pst-plot' (tvz,hv)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/pst-3dplot/pst-3dplot.sty
-(/usr/share/texlive/texmf-dist/tex/latex/pst-3d/pst-3d.sty
-Package: pst-3d 2009/07/28 package wrapper for pst-3d.tex (hv)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pst-3d/pst-3d.tex)
-File: pst-3d.tex 2022/11/21 v1.94 `PST-3d' (hv)
-)
 (/usr/share/texlive/texmf-dist/tex/latex/pst-node/pst-node.sty
 Package: pst-node 2012/09/18 v1.01 LaTeX wrapper for `pst-node' (HV)
 Package: pst-node 2010/04/22 package wrapper for pst-node.tex
@@ -353,48 +352,52 @@ Package: pst-3dplot 2010/01/01 package wrapper for pst-3dplot.tex (hv)
 )
 File: pst-3dplot.tex 2023/11/01 v2.09 `PST-3dplot' (hv)
 )
+(/usr/share/texlive/texmf-dist/tex/latex/pst-solides3d/pst-solides3d.sty
+Package: pst-solides3d 2017/03/03 package wrapper for pst-solides3d
+
+(/usr/share/texlive/texmf-dist/tex/generic/pst-solides3d/pst-solides3d.tex
+`PSTSOLIDESIIID' v4.35a, 2023/11/04
+\test@mode=\count308
+Invalid UTF-8 byte or sequence at line 994 replaced by U+FFFD.
+)
+File: pst-solides3d.tex 2023/11/04 v4.35a `PST-solides3D'
+)
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2024-01-04 L3 backend support: XeTeX
-\g__graphics_track_int=\count308
+\g__graphics_track_int=\count309
 \l__pdf_internal_box=\box57
-\g__pdf_backend_object_int=\count309
-\g__pdf_backend_annotation_int=\count310
-\g__pdf_backend_link_int=\count311
+\g__pdf_backend_object_int=\count310
+\g__pdf_backend_annotation_int=\count311
+\g__pdf_backend_link_int=\count312
 )
 (./Curvilinear.aux)
 \openout1 = `Curvilinear.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
-.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
+0.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 15.
+(Font)              <7> on input line 21.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 15.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 35.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 35.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 55.
+(Font)              <5> on input line 21.
 
 [1
 
@@ -405,12 +408,12 @@ L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 11130 strings out of 474878
- 210359 string characters out of 5762517
- 1920627 words of memory out of 5000000
- 33018 multiletter control sequences out of 15000+600000
- 560829 words of font info for 48 fonts, out of 8000000 for 9000
+ 11550 strings out of 474878
+ 219991 string characters out of 5762517
+ 1917627 words of memory out of 5000000
+ 33445 multiletter control sequences out of 15000+600000
+ 558077 words of font info for 37 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 90i,5n,86p,646b,314s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,5n,86p,670b,288s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on Curvilinear.pdf (1 page).
