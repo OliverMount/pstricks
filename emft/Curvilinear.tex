@@ -1,0 +1,61 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{pst-plot}
+\usepackage{pst-3dplot}
+
+\begin{document}
+
+\begin{pspicture}(-2,-2)(8,6)
+
+% Set up 3D view
+\psset{Alpha=30,Beta=20}
+
+% Draw axes
+\pstThreeDCoor[xMin=0,xMax=5.5,yMin=0,yMax=5.5,zMin=0,zMax=4,
+               linecolor=black,linewidth=1.2pt,arrows=->]
+
+% Draw the saddle surface mesh
+% Create grid lines for u2 = constant (running left-right)
+\multido{\n=0.5+0.5}{8}{%
+  \pstThreeDLine[linecolor=gray,linewidth=0.3pt]%
+    (0.5,\n,2)(1,\n,2.2)(1.5,\n,2.3)(2,\n,2.35)(2.5,\n,2.3)(3,\n,2.2)(3.5,\n,2.0)(4,\n,1.7)
+}
+
+% Create grid lines for u1 = constant (running front-back)
+\multido{\n=0.5+0.5}{8}{%
+  \pstThreeDLine[linecolor=gray,linewidth=0.3pt]%
+    (\n,0.5,1.8)(\n,1,2.0)(\n,1.5,2.2)(\n,2,2.35)(\n,2.5,2.4)(\n,3,2.35)(\n,3.5,2.2)(\n,4,1.9)
+}
+
+% Draw the three main coordinate curves with labels
+
+% u1 curve (left side, running in y-direction)
+\pstThreeDLine[linecolor=black,linewidth=1.5pt]%
+  (1.2,0.5,2.0)(1.2,1,2.15)(1.2,1.5,2.28)(1.2,2,2.35)(1.2,2.5,2.38)%
+  (1.2,3,2.35)(1.2,3.5,2.25)(1.2,4,2.0)
+\pstThreeDPut(1.2,4.3,2.0){\small $u_1$ curve}
+
+% u2 curve (right side, running in y-direction)
+\pstThreeDLine[linecolor=black,linewidth=1.5pt]%
+  (3.2,0.5,1.85)(3.2,1,2.0)(3.2,1.5,2.15)(3.2,2,2.28)(3.2,2.5,2.35)%
+  (3.2,3,2.35)(3.2,3.5,2.28)(3.2,4,2.1)
+\pstThreeDPut(3.2,4.3,2.1){\small $u_2$ curve}
+
+% u3 curve (top, running in x-direction)
+\pstThreeDLine[linecolor=black,linewidth=1.5pt]%
+  (0.5,3,2.1)(1,3,2.25)(1.5,3,2.35)(2,3,2.4)(2.5,3,2.42)%
+  (3,3,2.4)(3.5,3,2.32)(4,3,2.15)
+\pstThreeDPut(4.2,3,2.5){\small $u_3$ curve}
+
+% Add coordinate labels on surface
+\pstThreeDPut(1,1.5,1.9){\small $u_2=c_2$}
+\pstThreeDPut(2.5,1.8,2.5){\small $u_1=c_1$}
+\pstThreeDPut(2.3,2.5,2.1){\small $u_3=c_3$}
+
+% Axis labels
+\pstThreeDPut(5.8,0,0){\Large $x$}
+\pstThreeDPut(0,5.8,0){\Large $y$}
+\pstThreeDPut(0,0,4.3){\Large $z$}
+
+\end{pspicture}
+
+\end{document}

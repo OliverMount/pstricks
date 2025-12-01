@@ -1,0 +1,416 @@
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.5.5)  1 DEC 2025 10:30
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Curvilinear.tex
+(./Curvilinear.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
+Document Class: standalone 2022/10/10 v1.3b Class to compile TeX sub-files stan
+dalone
+(/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks17
+\XKV@tempa@toks=\toks18
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count183
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\sa@internal=\count184
+\c@sapage=\count185
+
+(/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cfg
+File: standalone.cfg 2022/10/10 v1.3b Default configuration file for 'standalon
+e' class
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+\sa@box=\box51
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pst-plot/pst-plot.sty
+Package: pst-plot 2011/06/05 v1.00 LaTeX wrapper for `pst-plot' (HV)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pstricks/pstricks.sty
+Package: pstricks 2024/02/02 v0.75 LaTeX wrapper for `PSTricks' (RN,HV)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 274.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/pst-xkey.tex
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pst-fp.tex
+`pst-fp' v0.06, 2020/11/20 (hv)
+\pstFP@xs=\count194
+\pstFP@xia=\count195
+\pstFP@xib=\count196
+\pstFP@xfa=\count197
+\pstFP@xfb=\count198
+\pstFP@rega=\count199
+\pstFP@regb=\count266
+\pstFP@regs=\count267
+\pstFP@times=\count268
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks19
+\pgfutil@tempdima=\dimen141
+\pgfutil@tempdimb=\dimen142
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box52
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks20
+\pgfkeys@temptoks=\toks21
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered
+.code.tex
+\pgfkeys@tmptoks=\toks22
+))) (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+\pgf@x=\dimen143
+\pgf@xa=\dimen144
+\pgf@xb=\dimen145
+\pgf@xc=\dimen146
+\pgf@y=\dimen147
+\pgf@ya=\dimen148
+\pgf@yb=\dimen149
+\pgf@yc=\dimen150
+\c@pgf@counta=\count269
+\c@pgf@countb=\count270
+\c@pgf@countc=\count271
+\c@pgf@countd=\count272
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen151
+\pgfmath@count=\count273
+\pgfmath@box=\box53
+\pgfmath@toks=\toks23
+\pgfmath@stack@operand=\toks24
+\pgfmath@stack@operation=\toks25
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count274
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen152
+\pgffor@skip=\dimen153
+\pgffor@stack=\toks26
+\pgffor@toks=\toks27
+))
+\psLoopIndex=\count275
+
+`PSTricks' v3.19c  <2024/02/02> (tvz,hv)
+\pst@dima=\dimen154
+\pst@dimb=\dimen155
+\pst@dimc=\dimen156
+\pst@dimd=\dimen157
+\pst@dimg=\dimen158
+\pst@dimh=\dimen159
+\pst@dimm=\dimen160
+\pst@dimn=\dimen161
+\pst@dimo=\dimen162
+\pst@dimp=\dimen163
+\pst@hbox=\box54
+\pst@ibox=\box55
+\pst@boxg=\box56
+\pst@cnta=\count276
+\pst@cntb=\count277
+\pst@cntc=\count278
+\pst@cntd=\count279
+\pst@cntg=\count280
+\pst@cnth=\count281
+\pst@cntm=\count282
+\pst@cntn=\count283
+\pst@cnto=\count284
+\pst@cntp=\count285
+\@zero=\count286
+\pst@toks=\toks28
+--- We are running latex or xelatex ---
+(/usr/share/texlive/texmf-dist/tex/xelatex/xetex-pstricks/pstricks.con
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/config/xdvipdfmx.cfg))
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks-color.tex)
+\psunit=\dimen164
+\psxunit=\dimen165
+\psyunit=\dimen166
+\pst@C@@rType=\count287
+\pslinewidth=\dimen167
+\psk@startLW=\dimen168
+\psk@endLW=\dimen169
+
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks-arrows.tex
+\pshooklength=\dimen170
+\pshookwidth=\dimen171
+)
+\pst@customdefs=\toks29
+
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks-dots.tex)
+\pslinearc=\dimen172
+\pst@symbolStep=\dimen173
+\pst@symbolWidth=\dimen174
+\pst@symbolLinewidth=\dimen175
+\everypsbox=\toks30
+\psframesep=\dimen176
+\pslabelsep=\dimen177
+\sh@wgridXunit=\dimen178
+\sh@wgridYunit=\dimen179
+\pst@shift=\dimen180
+\ps@imagectr=\count288
+
+(/usr/share/texlive/texmf-dist/tex/xelatex/xetex-pstricks/pstricks.con
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/config/xdvipdfmx.cfg
+Using PSTricks configuration for LaTeX+dvipdfmx
+)))
+File: pstricks.tex 2024/02/02 v3.19c `PSTricks' (tvz,hv)
+ (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pst-fp.tex
+`pst-fp' v0.06, 2020/11/20 (hv))
+File: pst-fp.tex 2020/11/20 v0.06 `PST-fp' (hv)
+
+>>> Loading XeTeX special macros
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks-xetex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/pst-xkey.sty
+Package: pst-xkey 2005/11/25 v1.6 package wrapper for pst-xkey.tex (HA)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multido/multido.sty
+Package: multido 2004/05/17 package wrapper for PSTricks `multido.tex', (HV/RN)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/multido/multido.tex
+ v1.42, 2010/05/14 <tvz>
+\multido@count=\count289
+\multidocount=\count290
+\multido@stuff=\toks31
+)
+File: multido.tex 2010/05/14 v1.42 `multido' (tvz,hv)
+)
+Package: pst-plot 2021/09/23 package wrapper for pst-plot.tex (hv)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pst-plot/pst-plot.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pst-tools/pst-tools.tex
+`PST-tools' v0.12, 2021/09/23 (hv)
+\randomi=\count291
+\ranval=\count292
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks-add/pstricks-add.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pst-node/pst-node.tex
+ v1.43, 2022/01/31
+\psrow=\count293
+\pscol=\count294
+\psmatrixcnt=\count295
+\psrowsep=\skip50
+\pscolsep=\skip51
+\pst@args=\count296
+\num@pts=\count297
+\pst@argcnt=\count298
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pst-arrow/pst-arrow.tex
+`pst-arrow' v0.05, 2021/11/16 (dr,hv))
+(/usr/share/texlive/texmf-dist/tex/generic/pst-3d/pst-3d.tex
+`PST-3d' v1.11, 2010/02/14 (tvz))
+(/usr/share/texlive/texmf-dist/tex/generic/pst-math/pst-math.tex
+`pst-math' v0.67 , (CJ,hv)) `pstricks-add' v3.94, 2023/04/17 (dr,hv)
+\psparallelogramsep=\dimen181
+\pst@cntC=\count299
+\pst@stepcount=\count300
+\chart@ColorIndex=\dimen182
+\chart@ColorStep=\dimen183
+\pst@chartHeight=\dimen184
+\pst@chartStackDepth=\dimen185
+\pst@chartStackWidth=\dimen186
+\chart@Toggle=\count301
+\psVectorCtr=\count302
+)
+ v1.94, 2022/11/21 (tvz,hv)
+\pstRadUnit=\dimen187
+\pstRadUnitInv=\dimen188
+\pst@linecnt=\count303
+\RCD@file=\read2
+\psxlabelsep=\dimen189
+\psylabelsep=\dimen190
+\psk@subticksize=\dimen191
+\pst@xticksizeA=\dimen192
+\pst@xticksizeB=\dimen193
+\pst@xticksizeC=\dimen194
+\pst@yticksizeA=\dimen195
+\pst@yticksizeB=\dimen196
+\pst@yticksizeC=\dimen197
+\@digitcounter=\count304
+\psk@llx=\dimen198
+\psk@lly=\dimen199
+\psk@urx=\dimen256
+\psk@ury=\dimen257
+\pst@xunit=\dimen258
+\pst@yunit=\dimen259
+)
+File: pst-plot.tex 2022/11/21 1.94 `pst-plot' (tvz,hv)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pst-3dplot/pst-3dplot.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pst-3d/pst-3d.sty
+Package: pst-3d 2009/07/28 package wrapper for pst-3d.tex (hv)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pst-3d/pst-3d.tex)
+File: pst-3d.tex 2022/11/21 v1.94 `PST-3d' (hv)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pst-node/pst-node.sty
+Package: pst-node 2012/09/18 v1.01 LaTeX wrapper for `pst-node' (HV)
+Package: pst-node 2010/04/22 package wrapper for pst-node.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pst-node/pst-node.tex)
+File: pst-node.tex 2022/11/21 1.94 `pst-node' (tvz,hv)
+)
+Package: pst-3dplot 2010/01/01 package wrapper for pst-3dplot.tex (hv)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pst-3dplot/pst-3dplot.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pst-node/pst-node.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/multido/multido.tex
+ v1.42, 2010/05/14 <tvz>) `PST-3dplot' v2.09, 2023/11/01 (HV,DL)
+\pst@dimf=\dimen260
+\pst@cntx=\count305
+\pst@cnty=\count306
+\pst@cntz=\count307
+\pst@dimx=\dimen261
+\pst@dimy=\dimen262
+\pst@dimz=\dimen263
+\pst@dx=\dimen264
+\pst@dy=\dimen265
+\pszunit=\dimen266
+)
+File: pst-3dplot.tex 2023/11/01 v2.09 `PST-3dplot' (hv)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2024-01-04 L3 backend support: XeTeX
+\g__graphics_track_int=\count308
+\l__pdf_internal_box=\box57
+\g__pdf_backend_object_int=\count309
+\g__pdf_backend_annotation_int=\count310
+\g__pdf_backend_link_int=\count311
+)
+(./Curvilinear.aux)
+\openout1 = `Curvilinear.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
+.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 15.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 15.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 35.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 35.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 55.
+
+[1
+
+] (./Curvilinear.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 11130 strings out of 474878
+ 210359 string characters out of 5762517
+ 1920627 words of memory out of 5000000
+ 33018 multiletter control sequences out of 15000+600000
+ 560829 words of font info for 48 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 90i,5n,86p,646b,314s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on Curvilinear.pdf (1 page).
