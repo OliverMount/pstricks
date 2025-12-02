@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=latex 2025.5.5)  2 DEC 2025 20:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=latex 2025.5.5)  2 DEC 2025 20:45
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
  %&-line parsing enabled.
-**Cylin1.tex
-(./Cylin1.tex
+**Coorinates.tex
+(./Coorinates.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -362,8 +362,8 @@ File: l3backend-dvips.def 2024-01-04 L3 backend support: dvips
 \g__pdf_backend_link_int=\count285
 \g__pdf_backend_link_sf_int=\count286
 )
-(./Cylin1.aux)
-\openout1 = `Cylin1.aux'.
+(./Coorinates.aux)
+\openout1 = `Coorinates.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
@@ -380,24 +380,29 @@ LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 54.
+(Font)              <20.74> on input line 68.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 54.
+(Font)              <14.4> on input line 68.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 54.
- [1] (./Cylin1.aux)
+(Font)              <12> on input line 68.
+
+Overfull \hbox (2.25583pt too wide) in paragraph at lines 124--125
+ [][][] 
+ []
+
+[1] (./Coorinates.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 12441 strings out of 474223
- 265568 string characters out of 5748760
- 1929972 words of memory out of 5000000
- 34517 multiletter control sequences out of 15000+600000
- 560821 words of font info for 45 fonts, out of 8000000 for 9000
+ 12338 strings out of 474223
+ 263407 string characters out of 5748760
+ 1925972 words of memory out of 5000000
+ 34420 multiletter control sequences out of 15000+600000
+ 560809 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,7n,107p,403b,844s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,6n,107p,407b,835s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Cylin1.dvi (1 page, 17956 bytes).
+Output written on Coorinates.dvi (1 page, 11940 bytes).
