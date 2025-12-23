@@ -1,0 +1,175 @@
+\documentclass[12pt]{article}
+\usepackage{pst-3dplot}
+\usepackage{pstricks-add}
+\usepackage{amsmath}
+\usepackage{bm}
+
+\begin{document}
+
+\section*{Cartesian Coordinates}
+
+\begin{center}
+\begin{pspicture}(-3,-2)(6,5)
+\psset{unit=1cm}
+
+% 3D coordinate system
+\pstThreeDCoor[xMin=0,xMax=4,yMin=0,yMax=4,zMin=0,zMax=4,
+  linecolor=black,arrows=->]
+
+% Draw the rectangular box centered at P
+\pstThreeDBox[fillstyle=solid,fillcolor=blue!30,opacity=0.6](1.5,1.5,2)(1.5,1,1.2)
+
+% Point P at center
+\pstThreeDDot[dotscale=1.5](2.25,2,2.6)
+\pstThreeDPut(2.4,2,2.6){$P$}
+
+% Labels for dimensions
+\pstThreeDPut(2.25,1.2,2.6){$dy$}
+\pstThreeDLine[arrows=<->](1.5,1.2,2.6)(3,1.2,2.6)
+
+\pstThreeDPut(1.2,2,2.6){$dx$}
+\pstThreeDLine[arrows=<->](1.2,1.5,2.6)(1.2,2.5,2.6)
+
+\pstThreeDPut(3.3,2,2.6){$dz$}
+\pstThreeDLine[arrows=<->](3.3,2,2)(3.3,2,3.2)
+
+% Labels for sides
+\pstThreeDPut(0.8,2,2.3){\small Front side}
+\pstThreeDPut(3.5,2,2.3){\small Right side}
+\pstThreeDPut(2.25,2,3.5){\small Top side}
+
+% Point coordinates
+\pstThreeDPut(4.5,0.5,3.5){Point $P(x_o, y_o, z_o)$}
+
+\end{pspicture}
+\end{center}
+
+\vspace{2cm}
+
+\section*{Cylindrical Coordinates}
+
+\begin{center}
+\begin{pspicture}(-3,-2)(6,5)
+\psset{unit=1cm}
+
+% 3D coordinate system
+\pstThreeDCoor[xMin=0,xMax=4,yMin=0,yMax=4,zMin=0,zMax=4,
+  linecolor=black,arrows=->]
+
+% Draw cylindrical volume element
+% Inner arc
+\pstThreeDLine[linecolor=blue](2,1.5,2)(2.5,2,2)
+\pstThreeDLine[linecolor=blue](2.5,2,2)(2,2.5,2)
+\pstThreeDLine[linecolor=blue](2,2.5,2)(1.5,2,2)
+\pstThreeDLine[linecolor=blue](1.5,2,2)(2,1.5,2)
+
+% Outer arc
+\pstThreeDLine[linecolor=blue](2.2,1.3,2)(2.8,1.8,2)
+\pstThreeDLine[linecolor=blue](2.8,1.8,2)(2.8,2.2,2)
+\pstThreeDLine[linecolor=blue](2.8,2.2,2)(2.2,2.7,2)
+\pstThreeDLine[linecolor=blue](2.2,2.7,2)(1.3,2.2,2)
+\pstThreeDLine[linecolor=blue](1.3,2.2,2)(1.3,1.8,2)
+\pstThreeDLine[linecolor=blue](1.3,1.8,2)(2.2,1.3,2)
+
+% Top surface
+\pstThreeDLine[linecolor=blue](2,1.5,3.2)(2.5,2,3.2)
+\pstThreeDLine[linecolor=blue](2.5,2,3.2)(2,2.5,3.2)
+\pstThreeDLine[linecolor=blue](2,2.5,3.2)(1.5,2,3.2)
+\pstThreeDLine[linecolor=blue](1.5,2,3.2)(2,1.5,3.2)
+
+\pstThreeDLine[linecolor=blue](2.2,1.3,3.2)(2.8,1.8,3.2)
+\pstThreeDLine[linecolor=blue](2.8,1.8,3.2)(2.8,2.2,3.2)
+\pstThreeDLine[linecolor=blue](2.8,2.2,3.2)(2.2,2.7,3.2)
+\pstThreeDLine[linecolor=blue](2.2,2.7,3.2)(1.3,2.2,3.2)
+
+% Vertical edges
+\pstThreeDLine[linecolor=blue](2,1.5,2)(2,1.5,3.2)
+\pstThreeDLine[linecolor=blue](2.5,2,2)(2.5,2,3.2)
+\pstThreeDLine[linecolor=blue](1.5,2,2)(1.5,2,3.2)
+\pstThreeDLine[linecolor=blue](2.8,1.8,2)(2.8,1.8,3.2)
+\pstThreeDLine[linecolor=blue](1.3,1.8,2)(1.3,1.8,3.2)
+
+% Shading
+\pspolygon[fillstyle=solid,fillcolor=blue!20,opacity=0.4,linestyle=none]
+  (2,2.5)(2.5,2.8)(2.5,3.5)(2,3.2)
+
+% Point P
+\pstThreeDDot[dotscale=1.5](2,2,2.6)
+\pstThreeDPut(2.3,2,2.6){$P$}
+
+% Labels
+\pstThreeDPut(2.5,1.5,2){$d\rho$}
+\pstThreeDLine[arrows=<->](2,1.8,1.8)(2.5,1.8,1.8)
+
+\pstThreeDPut(1.2,2.3,2){$\rho d\phi$}
+\pstThreeDLine[arrows=<->](1.3,2.5,1.8)(1.8,2.8,1.8)
+
+\pstThreeDPut(3,2,2.6){$dz$}
+\pstThreeDLine[arrows=<->](3,2,2)(3,2,3.2)
+
+\pstThreeDPut(4.5,0.5,3.5){Point $P(\rho_o, \phi_o, z_o)$}
+
+\end{pspicture}
+\end{center}
+
+\vspace{2cm}
+
+\section*{Spherical Coordinates}
+
+\begin{center}
+\begin{pspicture}(-3,-2)(6,5)
+\psset{unit=1cm}
+
+% 3D coordinate system
+\pstThreeDCoor[xMin=0,xMax=4,yMin=0,yMax=4,zMin=0,zMax=4,
+  linecolor=black,arrows=->]
+
+% Draw spherical volume element (simplified as curved box)
+% Bottom radial lines
+\pstThreeDLine[linecolor=blue](0.5,0.5,1.5)(1.5,1,2)
+\pstThreeDLine[linecolor=blue](0.5,1.5,1.5)(1,2,2)
+\pstThreeDLine[linecolor=blue](1.5,1.5,1.5)(2,2,2)
+\pstThreeDLine[linecolor=blue](1.5,0.5,1.5)(2,1,2)
+
+% Outer radial surface
+\pstThreeDLine[linecolor=blue](1.8,1.2,2.3)(2.5,1.5,3)
+\pstThreeDLine[linecolor=blue](1.2,1.8,2.3)(1.5,2.5,3)
+\pstThreeDLine[linecolor=blue](2.2,2.2,2.3)(2.8,2.8,3)
+\pstThreeDLine[linecolor=blue](2.2,1.2,2.3)(2.8,1.5,3)
+
+% Connecting edges
+\pstThreeDLine[linecolor=blue](1.5,1,2)(1.8,1.2,2.3)
+\pstThreeDLine[linecolor=blue](1,2,2)(1.2,1.8,2.3)
+\pstThreeDLine[linecolor=blue](2,2,2)(2.2,2.2,2.3)
+\pstThreeDLine[linecolor=blue](2,1,2)(2.2,1.2,2.3)
+
+% Top edges
+\pstThreeDLine[linecolor=blue](1.8,1.2,2.3)(2.2,1.2,2.3)
+\pstThreeDLine[linecolor=blue](1.2,1.8,2.3)(2.2,2.2,2.3)
+\pstThreeDLine[linecolor=blue](2.5,1.5,3)(2.8,1.5,3)
+\pstThreeDLine[linecolor=blue](1.5,2.5,3)(2.8,2.8,3)
+
+% Shading
+\pspolygon[fillstyle=solid,fillcolor=blue!20,opacity=0.4,linestyle=none]
+  (2,2)(2.5,2.5)(2.5,3.2)(2,2.8)
+
+% Point P
+\pstThreeDDot[dotscale=1.5](1.8,1.8,2.2)
+\pstThreeDPut(2.1,1.8,2.2){$P$}
+
+% Labels
+\pstThreeDPut(1.3,0.8,1.8){$dr$}
+\pstThreeDLine[arrows=<->](1.2,0.8,1.7)(1.8,1.2,2.1)
+
+\pstThreeDPut(0.8,1.5,2){$rd\theta$}
+\pstThreeDLine[arrows=<->](1,1.5,1.9)(1.5,1.8,2.1)
+
+\pstThreeDPut(2.5,1.2,1.8){$r\sin\theta d\phi$}
+\pstThreeDLine[arrows=<->](2.2,1,1.9)(2.5,1.5,2.1)
+
+\pstThreeDPut(4.2,0.5,3.5){Point $P(r_o, \theta_o, \phi_o)$}
+
+\end{pspicture}
+\end{center}
+
+\end{document}
