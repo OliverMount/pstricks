@@ -1,6 +1,6 @@
 \documentclass[12pt]{article}
-\usepackage{pst-3dplot}
-\usepackage{pstricks-add}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
 \usepackage{amsmath}
 \usepackage{bm}
 
@@ -9,167 +9,255 @@
 \section*{Cartesian Coordinates}
 
 \begin{center}
-\begin{pspicture}(-3,-2)(6,5)
-\psset{unit=1cm}
+\tdplotsetmaincoords{70}{110}
+\begin{tikzpicture}[scale=2.5,tdplot_main_coords]
 
-% 3D coordinate system
-\pstThreeDCoor[xMin=0,xMax=4,yMin=0,yMax=4,zMin=0,zMax=4,
-  linecolor=black,arrows=->]
+% Draw axes
+\draw[thick,->] (0,0,0) -- (2,0,0) node[anchor=north east]{$x$};
+\draw[thick,->] (0,0,0) -- (0,2,0) node[anchor=north west]{$y$};
+\draw[thick,->] (0,0,0) -- (0,0,2) node[anchor=south]{$z$};
 
-% Draw the rectangular box centered at P
-\pstThreeDBox[fillstyle=solid,fillcolor=blue!30,opacity=0.6](1.5,1.5,2)(1.5,1,1.2)
+% Define box corners
+\def\xa{0.6} \def\xb{1.2}
+\def\ya{0.7} \def\yb{1.1}
+\def\za{0.8} \def\zb{1.3}
+
+% Draw back edges
+\draw[blue,thick] (\xa,\ya,\za) -- (\xb,\ya,\za);
+\draw[blue,thick] (\xa,\ya,\za) -- (\xa,\yb,\za);
+\draw[blue,thick] (\xa,\ya,\za) -- (\xa,\ya,\zb);
+
+% Draw top back edges
+\draw[blue,thick] (\xa,\ya,\zb) -- (\xb,\ya,\zb);
+\draw[blue,thick] (\xa,\ya,\zb) -- (\xa,\yb,\zb);
+
+% Draw back top corner edges
+\draw[blue,thick] (\xb,\ya,\za) -- (\xb,\ya,\zb);
+\draw[blue,thick] (\xa,\yb,\za) -- (\xa,\yb,\zb);
+
+% Fill front face (semi-transparent)
+\fill[blue!20,opacity=0.6] (\xb,\ya,\za) -- (\xb,\yb,\za) -- (\xb,\yb,\zb) -- (\xb,\ya,\zb) -- cycle;
+
+% Fill right face
+\fill[blue!25,opacity=0.6] (\xa,\yb,\za) -- (\xb,\yb,\za) -- (\xb,\yb,\zb) -- (\xa,\yb,\zb) -- cycle;
+
+% Fill top face
+\fill[blue!30,opacity=0.6] (\xa,\ya,\zb) -- (\xb,\ya,\zb) -- (\xb,\yb,\zb) -- (\xa,\yb,\zb) -- cycle;
+
+% Draw front edges
+\draw[blue,thick] (\xb,\ya,\za) -- (\xb,\yb,\za);
+\draw[blue,thick] (\xb,\yb,\za) -- (\xa,\yb,\za);
+\draw[blue,thick] (\xb,\yb,\za) -- (\xb,\yb,\zb);
+\draw[blue,thick] (\xb,\ya,\zb) -- (\xb,\yb,\zb);
+\draw[blue,thick] (\xa,\yb,\zb) -- (\xb,\yb,\zb);
 
 % Point P at center
-\pstThreeDDot[dotscale=1.5](2.25,2,2.6)
-\pstThreeDPut(2.4,2,2.6){$P$}
+\fill[black] ({(\xa+\xb)/2},{(\ya+\yb)/2},{(\za+\zb)/2}) circle (0.8pt);
+\node at ({(\xa+\xb)/2+0.1},{(\ya+\yb)/2},{(\za+\zb)/2}) {$P$};
 
-% Labels for dimensions
-\pstThreeDPut(2.25,1.2,2.6){$dy$}
-\pstThreeDLine[arrows=<->](1.5,1.2,2.6)(3,1.2,2.6)
+% Dimension labels
+\draw[<->,black] (\xa,\ya-0.15,\za) -- (\xb,\ya-0.15,\za);
+\node at ({(\xa+\xb)/2},\ya-0.25,\za) {$dx$};
 
-\pstThreeDPut(1.2,2,2.6){$dx$}
-\pstThreeDLine[arrows=<->](1.2,1.5,2.6)(1.2,2.5,2.6)
+\draw[<->,black] (\xa-0.15,\ya,\za) -- (\xa-0.15,\yb,\za);
+\node at (\xa-0.28,{(\ya+\yb)/2},\za) {$dy$};
 
-\pstThreeDPut(3.3,2,2.6){$dz$}
-\pstThreeDLine[arrows=<->](3.3,2,2)(3.3,2,3.2)
+\draw[<->,black] (\xb+0.12,\yb,\za) -- (\xb+0.12,\yb,\zb);
+\node at (\xb+0.25,\yb,{(\za+\zb)/2}) {$dz$};
 
-% Labels for sides
-\pstThreeDPut(0.8,2,2.3){\small Front side}
-\pstThreeDPut(3.5,2,2.3){\small Right side}
-\pstThreeDPut(2.25,2,3.5){\small Top side}
+% Side labels
+\node at (\xb+0.15,{(\ya+\yb)/2},{(\za+\zb)/2}) {\small Front side};
+\node at ({(\xa+\xb)/2},\yb+0.15,{(\za+\zb)/2}) {\small Right side};
+\node at ({(\xa+\xb)/2},{(\ya+\yb)/2},\zb+0.15) {\small Top side};
 
 % Point coordinates
-\pstThreeDPut(4.5,0.5,3.5){Point $P(x_o, y_o, z_o)$}
+\node at (1.8,0.3,1.6) {$P(x_o, y_o, z_o)$};
 
-\end{pspicture}
+\end{tikzpicture}
 \end{center}
 
-\vspace{2cm}
+\newpage
 
-\section*{Cylindrical Coordinates}
+\section*{Cylindrical Coordinates ($\rho, \phi, z$)}
 
 \begin{center}
-\begin{pspicture}(-3,-2)(6,5)
-\psset{unit=1cm}
+\tdplotsetmaincoords{70}{110}
+\begin{tikzpicture}[scale=2.5,tdplot_main_coords]
 
-% 3D coordinate system
-\pstThreeDCoor[xMin=0,xMax=4,yMin=0,yMax=4,zMin=0,zMax=4,
-  linecolor=black,arrows=->]
+% Draw axes
+\draw[thick,->] (0,0,0) -- (2,0,0) node[anchor=north east]{$x$};
+\draw[thick,->] (0,0,0) -- (0,2,0) node[anchor=north west]{$y$};
+\draw[thick,->] (0,0,0) -- (0,0,2) node[anchor=south]{$z$};
 
-% Draw cylindrical volume element
-% Inner arc
-\pstThreeDLine[linecolor=blue](2,1.5,2)(2.5,2,2)
-\pstThreeDLine[linecolor=blue](2.5,2,2)(2,2.5,2)
-\pstThreeDLine[linecolor=blue](2,2.5,2)(1.5,2,2)
-\pstThreeDLine[linecolor=blue](1.5,2,2)(2,1.5,2)
+% Cylindrical element parameters
+\def\ri{0.6}  % inner radius
+\def\ro{0.85} % outer radius
+\def\phia{30} % start angle
+\def\phib{70} % end angle
+\def\za{0.7}  % bottom z
+\def\zb{1.2}  % top z
 
-% Outer arc
-\pstThreeDLine[linecolor=blue](2.2,1.3,2)(2.8,1.8,2)
-\pstThreeDLine[linecolor=blue](2.8,1.8,2)(2.8,2.2,2)
-\pstThreeDLine[linecolor=blue](2.8,2.2,2)(2.2,2.7,2)
-\pstThreeDLine[linecolor=blue](2.2,2.7,2)(1.3,2.2,2)
-\pstThreeDLine[linecolor=blue](1.3,2.2,2)(1.3,1.8,2)
-\pstThreeDLine[linecolor=blue](1.3,1.8,2)(2.2,1.3,2)
+% Draw bottom arcs
+\draw[blue,thick] ({\ri*cos(\phia)},{\ri*sin(\phia)},\za)
+    arc (\phia:\phib:\ri);
+\draw[blue,thick] ({\ro*cos(\phia)},{\ro*sin(\phia)},\za)
+    arc (\phia:\phib:\ro);
 
-% Top surface
-\pstThreeDLine[linecolor=blue](2,1.5,3.2)(2.5,2,3.2)
-\pstThreeDLine[linecolor=blue](2.5,2,3.2)(2,2.5,3.2)
-\pstThreeDLine[linecolor=blue](2,2.5,3.2)(1.5,2,3.2)
-\pstThreeDLine[linecolor=blue](1.5,2,3.2)(2,1.5,3.2)
+% Draw top arcs
+\draw[blue,thick] ({\ri*cos(\phia)},{\ri*sin(\phia)},\zb)
+    arc (\phia:\phib:\ri);
+\draw[blue,thick] ({\ro*cos(\phia)},{\ro*sin(\phia)},\zb)
+    arc (\phia:\phib:\ro);
 
-\pstThreeDLine[linecolor=blue](2.2,1.3,3.2)(2.8,1.8,3.2)
-\pstThreeDLine[linecolor=blue](2.8,1.8,3.2)(2.8,2.2,3.2)
-\pstThreeDLine[linecolor=blue](2.8,2.2,3.2)(2.2,2.7,3.2)
-\pstThreeDLine[linecolor=blue](2.2,2.7,3.2)(1.3,2.2,3.2)
+% Draw radial lines at bottom
+\draw[blue,thick] ({\ri*cos(\phia)},{\ri*sin(\phia)},\za) --
+                  ({\ro*cos(\phia)},{\ro*sin(\phia)},\za);
+\draw[blue,thick] ({\ri*cos(\phib)},{\ri*sin(\phib)},\za) --
+                  ({\ro*cos(\phib)},{\ro*sin(\phib)},\za);
 
-% Vertical edges
-\pstThreeDLine[linecolor=blue](2,1.5,2)(2,1.5,3.2)
-\pstThreeDLine[linecolor=blue](2.5,2,2)(2.5,2,3.2)
-\pstThreeDLine[linecolor=blue](1.5,2,2)(1.5,2,3.2)
-\pstThreeDLine[linecolor=blue](2.8,1.8,2)(2.8,1.8,3.2)
-\pstThreeDLine[linecolor=blue](1.3,1.8,2)(1.3,1.8,3.2)
+% Draw radial lines at top
+\draw[blue,thick] ({\ri*cos(\phia)},{\ri*sin(\phia)},\zb) --
+                  ({\ro*cos(\phia)},{\ro*sin(\phia)},\zb);
+\draw[blue,thick] ({\ri*cos(\phib)},{\ri*sin(\phib)},\zb) --
+                  ({\ro*cos(\phib)},{\ro*sin(\phib)},\zb);
 
-% Shading
-\pspolygon[fillstyle=solid,fillcolor=blue!20,opacity=0.4,linestyle=none]
-  (2,2.5)(2.5,2.8)(2.5,3.5)(2,3.2)
+% Draw vertical edges
+\draw[blue,thick] ({\ri*cos(\phia)},{\ri*sin(\phia)},\za) --
+                  ({\ri*cos(\phia)},{\ri*sin(\phia)},\zb);
+\draw[blue,thick] ({\ro*cos(\phia)},{\ro*sin(\phia)},\za) --
+                  ({\ro*cos(\phia)},{\ro*sin(\phia)},\zb);
+\draw[blue,thick] ({\ri*cos(\phib)},{\ri*sin(\phib)},\za) --
+                  ({\ri*cos(\phib)},{\ri*sin(\phib)},\zb);
+\draw[blue,thick] ({\ro*cos(\phib)},{\ro*sin(\phib)},\za) --
+                  ({\ro*cos(\phib)},{\ro*sin(\phib)},\zb);
+
+% Fill outer face
+\fill[blue!30,opacity=0.5]
+    ({\ro*cos(\phia)},{\ro*sin(\phia)},\za) --
+    ({\ro*cos(\phib)},{\ro*sin(\phib)},\za) --
+    ({\ro*cos(\phib)},{\ro*sin(\phib)},\zb) --
+    ({\ro*cos(\phia)},{\ro*sin(\phia)},\zb) -- cycle;
 
 % Point P
-\pstThreeDDot[dotscale=1.5](2,2,2.6)
-\pstThreeDPut(2.3,2,2.6){$P$}
+\def\phim{50} % middle angle
+\def\rm{0.725} % middle radius
+\def\zm{0.95} % middle z
+\fill[black] ({\rm*cos(\phim)},{\rm*sin(\phim)},\zm) circle (0.8pt);
+\node at ({\rm*cos(\phim)+0.12},{\rm*sin(\phim)},\zm) {$P$};
 
-% Labels
-\pstThreeDPut(2.5,1.5,2){$d\rho$}
-\pstThreeDLine[arrows=<->](2,1.8,1.8)(2.5,1.8,1.8)
+% Dimension labels
+\draw[<->,black] ({\ri*cos(\phim)},{\ri*sin(\phim)},\za-0.15) --
+                 ({\ro*cos(\phim)},{\ro*sin(\phim)},\za-0.15);
+\node at ({(\ri+\ro)/2*cos(\phim)},{(\ri+\ro)/2*sin(\phim)},\za-0.25) {$d\rho$};
 
-\pstThreeDPut(1.2,2.3,2){$\rho d\phi$}
-\pstThreeDLine[arrows=<->](1.3,2.5,1.8)(1.8,2.8,1.8)
+\draw[<->,black] ({\ri*cos(\phia)},{\ri*sin(\phia)},\za-0.1)
+    arc (\phia:\phib:\ri-0.1);
+\node at ({\ri*cos(50)},{\ri*sin(50)-0.2},\za) {$\rho d\phi$};
 
-\pstThreeDPut(3,2,2.6){$dz$}
-\pstThreeDLine[arrows=<->](3,2,2)(3,2,3.2)
+\draw[<->,black] ({\ro*cos(\phib)+0.08},{\ro*sin(\phib)+0.08},\za) --
+                 ({\ro*cos(\phib)+0.08},{\ro*sin(\phib)+0.08},\zb);
+\node at ({\ro*cos(\phib)+0.2},{\ro*sin(\phib)+0.15},{(\za+\zb)/2}) {$dz$};
 
-\pstThreeDPut(4.5,0.5,3.5){Point $P(\rho_o, \phi_o, z_o)$}
+\node at (1.6,0.3,1.6) {$P(\rho_o, \phi_o, z_o)$};
 
-\end{pspicture}
+\end{tikzpicture}
 \end{center}
 
-\vspace{2cm}
+\newpage
 
-\section*{Spherical Coordinates}
+\section*{Spherical Coordinates ($r, \theta, \phi$)}
 
 \begin{center}
-\begin{pspicture}(-3,-2)(6,5)
-\psset{unit=1cm}
+\tdplotsetmaincoords{70}{110}
+\begin{tikzpicture}[scale=2.5,tdplot_main_coords]
 
-% 3D coordinate system
-\pstThreeDCoor[xMin=0,xMax=4,yMin=0,yMax=4,zMin=0,zMax=4,
-  linecolor=black,arrows=->]
+% Draw axes
+\draw[thick,->] (0,0,0) -- (2,0,0) node[anchor=north east]{$x$};
+\draw[thick,->] (0,0,0) -- (0,2,0) node[anchor=north west]{$y$};
+\draw[thick,->] (0,0,0) -- (0,0,2) node[anchor=south]{$z$};
 
-% Draw spherical volume element (simplified as curved box)
-% Bottom radial lines
-\pstThreeDLine[linecolor=blue](0.5,0.5,1.5)(1.5,1,2)
-\pstThreeDLine[linecolor=blue](0.5,1.5,1.5)(1,2,2)
-\pstThreeDLine[linecolor=blue](1.5,1.5,1.5)(2,2,2)
-\pstThreeDLine[linecolor=blue](1.5,0.5,1.5)(2,1,2)
+% Spherical element parameters
+\def\ri{0.8}   % inner radius
+\def\ro{1.05}  % outer radius
+\def\thetai{40} % start theta angle
+\def\thetaf{60} % end theta angle
+\def\phii{25}   % start phi angle
+\def\phif{55}   % end phi angle
 
-% Outer radial surface
-\pstThreeDLine[linecolor=blue](1.8,1.2,2.3)(2.5,1.5,3)
-\pstThreeDLine[linecolor=blue](1.2,1.8,2.3)(1.5,2.5,3)
-\pstThreeDLine[linecolor=blue](2.2,2.2,2.3)(2.8,2.8,3)
-\pstThreeDLine[linecolor=blue](2.2,1.2,2.3)(2.8,1.5,3)
+% Helper function for spherical coordinates
+% Bottom arc (inner radius, theta_i)
+\draw[blue,thick]
+    ({\ri*sin(\thetai)*cos(\phii)},{\ri*sin(\thetai)*sin(\phii)},{\ri*cos(\thetai)}) --
+    ({\ri*sin(\thetai)*cos(\phif)},{\ri*sin(\thetai)*sin(\phif)},{\ri*cos(\thetai)});
 
-% Connecting edges
-\pstThreeDLine[linecolor=blue](1.5,1,2)(1.8,1.2,2.3)
-\pstThreeDLine[linecolor=blue](1,2,2)(1.2,1.8,2.3)
-\pstThreeDLine[linecolor=blue](2,2,2)(2.2,2.2,2.3)
-\pstThreeDLine[linecolor=blue](2,1,2)(2.2,1.2,2.3)
+% Top arc (inner radius, theta_f)
+\draw[blue,thick]
+    ({\ri*sin(\thetaf)*cos(\phii)},{\ri*sin(\thetaf)*sin(\phii)},{\ri*cos(\thetaf)}) --
+    ({\ri*sin(\thetaf)*cos(\phif)},{\ri*sin(\thetaf)*sin(\phif)},{\ri*cos(\thetaf)});
 
-% Top edges
-\pstThreeDLine[linecolor=blue](1.8,1.2,2.3)(2.2,1.2,2.3)
-\pstThreeDLine[linecolor=blue](1.2,1.8,2.3)(2.2,2.2,2.3)
-\pstThreeDLine[linecolor=blue](2.5,1.5,3)(2.8,1.5,3)
-\pstThreeDLine[linecolor=blue](1.5,2.5,3)(2.8,2.8,3)
+% Side arcs (phi constant)
+\draw[blue,thick]
+    ({\ri*sin(\thetai)*cos(\phii)},{\ri*sin(\thetai)*sin(\phii)},{\ri*cos(\thetai)}) --
+    ({\ri*sin(\thetaf)*cos(\phii)},{\ri*sin(\thetaf)*sin(\phii)},{\ri*cos(\thetaf)});
 
-% Shading
-\pspolygon[fillstyle=solid,fillcolor=blue!20,opacity=0.4,linestyle=none]
-  (2,2)(2.5,2.5)(2.5,3.2)(2,2.8)
+\draw[blue,thick]
+    ({\ri*sin(\thetai)*cos(\phif)},{\ri*sin(\thetai)*sin(\phif)},{\ri*cos(\thetai)}) --
+    ({\ri*sin(\thetaf)*cos(\phif)},{\ri*sin(\thetaf)*sin(\phif)},{\ri*cos(\thetaf)});
+
+% Outer surface edges
+\draw[blue,thick]
+    ({\ro*sin(\thetai)*cos(\phii)},{\ro*sin(\thetai)*sin(\phii)},{\ro*cos(\thetai)}) --
+    ({\ro*sin(\thetai)*cos(\phif)},{\ro*sin(\thetai)*sin(\phif)},{\ro*cos(\thetai)});
+
+\draw[blue,thick]
+    ({\ro*sin(\thetaf)*cos(\phii)},{\ro*sin(\thetaf)*sin(\phii)},{\ro*cos(\thetaf)}) --
+    ({\ro*sin(\thetaf)*cos(\phif)},{\ro*sin(\thetaf)*sin(\phif)},{\ro*cos(\thetaf)});
+
+\draw[blue,thick]
+    ({\ro*sin(\thetai)*cos(\phif)},{\ro*sin(\thetai)*sin(\phif)},{\ro*cos(\thetai)}) --
+    ({\ro*sin(\thetaf)*cos(\phif)},{\ro*sin(\thetaf)*sin(\phif)},{\ro*cos(\thetaf)});
+
+% Radial edges
+\draw[blue,thick]
+    ({\ri*sin(\thetai)*cos(\phii)},{\ri*sin(\thetai)*sin(\phii)},{\ri*cos(\thetai)}) --
+    ({\ro*sin(\thetai)*cos(\phii)},{\ro*sin(\thetai)*sin(\phii)},{\ro*cos(\thetai)});
+
+\draw[blue,thick]
+    ({\ri*sin(\thetai)*cos(\phif)},{\ri*sin(\thetai)*sin(\phif)},{\ri*cos(\thetai)}) --
+    ({\ro*sin(\thetai)*cos(\phif)},{\ro*sin(\thetai)*sin(\phif)},{\ro*cos(\thetai)});
+
+\draw[blue,thick]
+    ({\ri*sin(\thetaf)*cos(\phif)},{\ri*sin(\thetaf)*sin(\phif)},{\ri*cos(\thetaf)}) --
+    ({\ro*sin(\thetaf)*cos(\phif)},{\ro*sin(\thetaf)*sin(\phif)},{\ro*cos(\thetaf)});
+
+% Fill outer face
+\fill[blue!30,opacity=0.5]
+    ({\ro*sin(\thetai)*cos(\phif)},{\ro*sin(\thetai)*sin(\phif)},{\ro*cos(\thetai)}) --
+    ({\ro*sin(\thetaf)*cos(\phif)},{\ro*sin(\thetaf)*sin(\phif)},{\ro*cos(\thetaf)}) --
+    ({\ro*sin(\thetaf)*cos(\phii)},{\ro*sin(\thetaf)*sin(\phii)},{\ro*cos(\thetaf)}) --
+    ({\ro*sin(\thetai)*cos(\phii)},{\ro*sin(\thetai)*sin(\phii)},{\ro*cos(\thetai)}) -- cycle;
 
 % Point P
-\pstThreeDDot[dotscale=1.5](1.8,1.8,2.2)
-\pstThreeDPut(2.1,1.8,2.2){$P$}
+\def\rm{0.925}
+\def\thetam{50}
+\def\phim{40}
+\fill[black] ({\rm*sin(\thetam)*cos(\phim)},{\rm*sin(\thetam)*sin(\phim)},{\rm*cos(\thetam)})
+    circle (0.8pt);
+\node at ({\rm*sin(\thetam)*cos(\phim)+0.15},{\rm*sin(\thetam)*sin(\phim)},{\rm*cos(\thetam)}) {$P$};
 
-% Labels
-\pstThreeDPut(1.3,0.8,1.8){$dr$}
-\pstThreeDLine[arrows=<->](1.2,0.8,1.7)(1.8,1.2,2.1)
+% Dimension labels
+\draw[<->,black]
+    ({\ri*sin(\thetam)*cos(\phim)},{\ri*sin(\thetam)*sin(\phim)-0.08},{\ri*cos(\thetam)}) --
+    ({\ro*sin(\thetam)*cos(\phim)},{\ro*sin(\thetam)*sin(\phim)-0.08},{\ro*cos(\thetam)});
+\node at ({\rm*sin(\thetam)*cos(\phim)},{\rm*sin(\thetam)*sin(\phim)-0.2},{\rm*cos(\thetam)})
+    {$dr$};
 
-\pstThreeDPut(0.8,1.5,2){$rd\theta$}
-\pstThreeDLine[arrows=<->](1,1.5,1.9)(1.5,1.8,2.1)
+\node at (0.5,0.3,1.1) {$rd\theta$};
+\node at (0.9,0.15,0.55) {$r\sin\theta d\phi$};
 
-\pstThreeDPut(2.5,1.2,1.8){$r\sin\theta d\phi$}
-\pstThreeDLine[arrows=<->](2.2,1,1.9)(2.5,1.5,2.1)
+\node at (1.6,0.3,1.6) {$P(r_o, \theta_o, \phi_o)$};
 
-\pstThreeDPut(4.2,0.5,3.5){Point $P(r_o, \theta_o, \phi_o)$}
-
-\end{pspicture}
+\end{tikzpicture}
 \end{center}
 
 \end{document}
