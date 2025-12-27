@@ -25,9 +25,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="cm"
      showgrid="true"
-     inkscape:zoom="1.0116647"
-     inkscape:cx="495.71762"
-     inkscape:cy="398.84758"
+     inkscape:zoom="1.4307099"
+     inkscape:cx="518.97314"
+     inkscape:cy="379.88135"
      inkscape:window-width="1861"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -78,5 +78,12 @@
        cy="63.427994"
        rx="31.715754"
        ry="12.760274" />
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-opacity:1"
+       id="path3"
+       cx="122.42466"
+       cy="63.523972"
+       rx="20.342466"
+       ry="8.9691782" />
   </g>
 </svg>
